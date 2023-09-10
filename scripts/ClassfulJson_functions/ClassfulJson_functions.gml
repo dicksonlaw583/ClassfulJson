@@ -16,7 +16,7 @@ function json_stringify_classful(value, prettify=false, classField=CLASSFUL_JSON
 
 ///@func json_save_classful(filename, value, classField)
 ///@param {String} filename  The file to save into.
-///@param {Any} value  The value to encode.
+///@param {Any} value  The value to save.
 ///@param {Bool} prettify  Whether the resulting JSON string should be prettified. Default: false
 ///@param {String} classField  The key to indicate the class type with. Default: The value set for CLASSFUL_JSON_DEFAULT_CLASSFIELD
 ///@desc Save the given value as a JSON file, marking constructor-built structs using the given field to indicate its class type.
@@ -29,7 +29,7 @@ function json_save_classful(filename, value, prettify=false, classField=CLASSFUL
 }
 
 ///@func json_parse_classful(str, classField)
-///@param {String} str  The string to encrypt
+///@param {String} str  The JSON string to decode.
 ///@param {String} classField  The key to indicate the class type with. Default: The value set for CLASSFUL_JSON_DEFAULT_CLASSFIELD
 ///@return {Any}
 ///@desc Decode the given JSON string, restoring types of constructor-built structs using the given field indicating class type.
