@@ -1,0 +1,20 @@
+{
+    "_class_": "ClassfulJsonList",
+    "data": [
+        "foo",
+        {
+            "_class_": "ClassfulJsonVector2",
+            "x": 3,
+            "y": 4
+        },
+        [
+            "bar",
+            {
+                "baz": "qux"
+            },
+            {
+                "_class_": "ClassfulJsonBlank"
+            }
+        ]
+    ]
+}
